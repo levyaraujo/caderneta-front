@@ -1,11 +1,3 @@
-<script setup lang="ts">
-import { computed } from 'vue'
-
-const currentYear = computed(() => {
-  return new Date().getFullYear();
-});
-</script>
-
 <template>
   <footer class="bg-gray-900 text-gray-300 py-8 mt-16">
     <div class="max-w-6xl mx-auto px-4">
@@ -13,11 +5,11 @@ const currentYear = computed(() => {
 
         <div class="space-y-4">
           <div class="flex items-center space-x-2">
-            <img src="/icon.svg" alt="" srcset="">
+            <img src="/icon.svg" alt="icon" />
             <span class="text-white font-semibold text-xl">caderneta</span>
           </div>
           <p class="text-sm text-gray-400">
-            Organize seu dinheiro de forma simples e rápida direto pelo WhatsApp
+            Organize seu dinheiro de forma simples e rápida direto pelo WhatsApp.
           </p>
         </div>
 
@@ -43,7 +35,7 @@ const currentYear = computed(() => {
 <!--            </li>-->
             <li>
               <router-link
-                to="/faq"
+                to="#faq"
                 class="hover:text-emerald-400 transition-colors duration-200"
               >
                 FAQ

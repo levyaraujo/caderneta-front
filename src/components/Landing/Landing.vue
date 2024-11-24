@@ -12,7 +12,8 @@ import Examples from './Features.vue'
   <Hero />
   <Examples />
   <Pricing />
-  <FAQ />
+  <FAQ id="faq"/>
+  <router-view />
 </template>
 
 <style scoped>

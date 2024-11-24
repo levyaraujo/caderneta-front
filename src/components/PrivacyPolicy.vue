@@ -110,7 +110,7 @@ const lastUpdate = ref("24 de Novembro de 2024")
 
 <template>
   <section class="min-h-screen bg-gray-50">
-    <div class="max-w-4xl mx-auto px-4 py-12">
+    <div class="max-w-4xl mx-auto px-4 py-12 pt-20">
       <!-- Header -->
       <header class="text-center mb-12">
         <h1 class="text-4xl font-bold text-gray-900 mb-4">

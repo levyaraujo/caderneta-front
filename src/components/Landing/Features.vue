@@ -33,7 +33,7 @@ const features = [
   <section class="py-24 bg-[#151922] border-dashed border-4 border-gray-700 border-opacity-20 p-1" id="features">
     <div class="max-w-7xl mx-auto px-4">
       <h2 class="text-4xl md:text-6xl font-bold bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent text-center">
-        Funcionalidades Principais
+        Principais Funcionalidades
       </h2>
       <p class="text-gray-600 text-center mb-14 mt-2">Tenha acesso a diversos recursos, gráficos e mais!</p>
 
