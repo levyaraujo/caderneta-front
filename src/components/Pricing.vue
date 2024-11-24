@@ -12,7 +12,7 @@ const features = ref([
 </script>
 
 <template>
-  <section class="w-full bg-[#0F1729] py-24">
+  <section class="w-full bg-[#0F1729] py-24" id="pricing">
     <div class="max-w-7xl mx-auto px-4">
       <!-- Heading -->
       <div class="text-center mb-16">
