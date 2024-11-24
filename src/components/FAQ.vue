@@ -48,7 +48,7 @@ const toggleItem = (index: number) => {
         <h2 class="text-4xl font-bold mb-4 bg-gradient-to-r from-emerald-400 to-green-500 bg-clip-text text-transparent">
           Perguntas Frequentes
         </h2>
-        <p class="text-gray-400 text-lg">
+        <p class="text-gray-500">
           Tire suas dúvidas sobre o Caderneta
         </p>
       </div>
@@ -58,7 +58,7 @@ const toggleItem = (index: number) => {
         <div
           v-for="(item, index) in faqItems"
           :key="index"
-          class="bg-[#1A2337] rounded-lg overflow-hidden"
+          class="bg-[#1A2337] rounded-lg overflow-hidden hover:bg-[#1E293F] transition-colors duration-300"
         >
           <button
             @click="toggleItem(index)"
@@ -67,7 +67,7 @@ const toggleItem = (index: number) => {
             <span class="text-white font-medium text-lg">{{ item.question }}</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              :class="['w-5 h-5 transform transition-transform', item.isOpen ? 'rotate-180' : '']"
+              :class="['w-5 h-5 transform transition-transform duration-300', item.isOpen ? 'rotate-180' : '']"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -77,12 +77,21 @@ const toggleItem = (index: number) => {
             </svg>
           </button>
 
-          <div
-            v-show="item.isOpen"
-            class="px-6 pb-6"
+          <Transition
+            enter-active-class="transition-all duration-300 ease-out"
+            leave-active-class="transition-all duration-300 ease-in"
+            enter-from-class="opacity-0 transform -translate-y-4"
+            enter-to-class="opacity-100 transform translate-y-0"
+            leave-from-class="opacity-100 transform translate-y-0"
+            leave-to-class="opacity-0 transform -translate-y-4"
           >
-            <p class="text-gray-400">{{ item.answer }}</p>
-          </div>
+            <div
+              v-show="item.isOpen"
+              class="px-6 pb-6"
+            >
+              <p class="text-gray-400">{{ item.answer }}</p>
+            </div>
+          </Transition>
         </div>
       </div>
 
@@ -90,7 +99,7 @@ const toggleItem = (index: number) => {
       <div class="text-center mt-12">
         <p class="text-gray-400">
           Ainda tem dúvidas?
-          <a href="#" class="text-emerald-400 hover:text-emerald-300 ml-1">
+          <a href="#" class="text-emerald-400 hover:text-emerald-300 ml-1 transition-colors duration-300">
             Entre em contato com nosso suporte
           </a>
         </p>
@@ -98,3 +107,9 @@ const toggleItem = (index: number) => {
     </div>
   </section>
 </template>
+
+<style scoped>
+.transform {
+  transform-origin: top;
+}
+</style>

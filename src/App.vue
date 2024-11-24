@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import TopBar from "./components/TopBar.vue";
 import Hero from "./components/Hero.vue";
-import Examples from "./components/Examples.vue";
+import Examples from "./components/Features.vue";
 import Pricing from "./components/Pricing.vue";
 import FAQ from "./components/FAQ.vue";
 </script>

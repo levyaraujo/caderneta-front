@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
+import { whatsappLink } from '../utils.ts'
 
 const navigation = [
-  { name: 'Funcionalidades', href: '#funcionalidades' },
+  { name: 'Funcionalidades', href: '#features' },
   { name: 'Planos', href: '#pricing' },
   { name: 'FAQ', href: '#faq' }
 ]
@@ -57,7 +58,7 @@ onUnmounted(() => {
         <button
           class="hidden md:block px-5 py-2.5 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white transition-all duration-200 transform hover:-translate-y-0.5"
         >
-          Teste Grátis
+          <a :href="whatsappLink" target="_blank">Teste Grátis</a>
         </button>
 
         <!-- Mobile menu button -->
