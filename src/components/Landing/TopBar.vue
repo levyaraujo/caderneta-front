@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
-import { whatsappLink } from '../utils.ts'
+import { whatsappLink } from '../../utils.ts'
 
 const navigation = [
   { name: 'Funcionalidades', href: '#features' },
@@ -36,7 +36,7 @@ onUnmounted(() => {
         <!-- Logo -->
         <div class="flex-shrink-0">
           <a href="/" class="flex items-center text-2xl font-bold">
-            <img src="../../public/icon.svg" alt="Icon Description" class="mr-2">
+            <img src="../../../public/icon.svg" alt="Icon Description" class="mr-2">
             <span class="bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
         caderneta
       </span>

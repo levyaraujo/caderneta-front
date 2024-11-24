@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { whatsappLink } from '../utils.ts'
+import { whatsappLink } from '../../utils.ts'
 
 defineProps<{
   title?: string

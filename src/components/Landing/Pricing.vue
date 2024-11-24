@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { whatsappLink } from '../utils.ts'
+import { whatsappLink } from '../../utils.ts'
 
 interface Feature {
   title: string

@@ -27,7 +27,7 @@ const features = [
 
 <template>
   <div class="w-full h-auto rounded md:w-10/12 mx-auto">
-    <img src="../assets/hero.jpg" alt="Celular com WhatsApp Caderneta" class="w-full h-auto rounded">
+    <img src="../../assets/hero.jpg" alt="Celular com WhatsApp Caderneta" class="w-full h-auto rounded">
   </div>
 
   <section class="py-24 bg-[#151922] border-dashed border-4 border-gray-700 border-opacity-20 p-1" id="features">
