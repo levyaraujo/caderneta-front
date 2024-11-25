@@ -59,10 +59,10 @@ const currentYear = computed(() => {
           <ul class="space-y-2">
             <li>
               <a
-                href="mailto:contato@caderneta.com"
+                href="mailto:cadernetapp@gmail.com"
                 class="hover:text-emerald-400 transition-colors duration-200"
               >
-                contato@caderneta.com
+                cadernetapp@gmail.com
               </a>
             </li>
             <li>
