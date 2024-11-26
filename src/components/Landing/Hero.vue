@@ -29,7 +29,7 @@ defineProps<{
         <button
           class="px-8 py-3 rounded-full border-2 border-green-500 text-green-600 font-medium transition-all duration-200"
         >
-          <a href="#features">Ver Como Funciona</a>
+          <router-link to="#features">Ver Como Funciona</router-link>
         </button>
       </div>
     </div>

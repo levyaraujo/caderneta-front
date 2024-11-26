@@ -3,13 +3,13 @@
 import FAQ from './FAQ.vue'
 import Hero from './Hero.vue'
 import Pricing from './Pricing.vue'
-import TopBar from './TopBar.vue'
+import TopBar from '../TopBar.vue'
 import Examples from './Features.vue'
 </script>
 
 <template>
   <TopBar/>
-  <Hero />
+  <Hero id="hero"/>
   <Examples />
   <Pricing />
   <FAQ id="faq"/>

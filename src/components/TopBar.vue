@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
-import { whatsappLink } from '../../utils.ts'
+import { whatsappLink } from '../utils.ts'
 
 const navigation = [
   { name: 'Funcionalidades', href: '#features' },
@@ -35,24 +35,24 @@ onUnmounted(() => {
       <div class="flex items-center justify-between h-20">
         <!-- Logo -->
         <div class="flex-shrink-0">
-          <a href="/" class="flex items-center text-2xl font-bold">
-            <img src="../../../public/icon.svg" alt="Icon Description" class="mr-2">
+          <router-link to="#hero" class="flex items-center text-2xl font-bold">
+            <img src="../../public/icon.svg" alt="Icon Description" class="mr-2">
             <span class="bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
-        caderneta
-      </span>
-          </a>
+              caderneta
+              </span>
+          </router-link>
         </div>
 
         <div class="hidden md:flex items-center space-x-8">
           <div class="flex space-x-8">
-            <a
+            <router-link
               v-for="item in navigation"
               :key="item.name"
-              :href="item.href"
+              :to="item.href"
               :class="['hover:text-green-500 transition-colors duration-200 font-medium', isScrolled ? 'text-gray-500' : 'text-gray-600']"
             >
               {{ item.name }}
-            </a>
+            </router-link>
           </div>
         </div>
         <button
