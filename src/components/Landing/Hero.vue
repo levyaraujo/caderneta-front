@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { whatsappLink } from '../../utils.ts'
+import {whatsappLink} from '../../utils.ts'
 
 defineProps<{
   title?: string
@@ -22,14 +22,14 @@ defineProps<{
       </p>
       <div class="mt-10 flex justify-center gap-4">
         <button
-          class="px-8 py-3 rounded-full bg-gradient-to-r from-green-500 to-green-600 text-white font-medium shadow-lg shadow-green-500/30 hover:shadow-green-500/50 transition-all duration-200 transform hover:-translate-y-0.5"
+          class="px-8 py-3 rounded-full bg-gradient-to-r from-green-500 to-green-600 text-white font-medium shadow-sm shadow-green-500/30 hover:shadow-green-500/50 transition-all duration-200 transform hover:shadow-md hover:-translate-y-0.5"
         >
           <a :href="whatsappLink" target="_blank">Começar Agora</a>
         </button>
         <button
           class="px-8 py-3 rounded-full border-2 border-green-500 text-green-600 font-medium transition-all duration-200"
         >
-          <router-link to="#features">Ver Como Funciona</router-link>
+          <router-link to="#features">Como Funciona</router-link>
         </button>
       </div>
     </div>

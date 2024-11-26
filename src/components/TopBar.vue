@@ -56,7 +56,7 @@ onUnmounted(() => {
           </div>
         </div>
         <button
-          class="hidden md:block px-5 py-2.5 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white transition-all duration-200 transform hover:-translate-y-0.5"
+          class="px-8 py-3 rounded-full bg-gradient-to-r from-green-500 to-green-600 text-white font-medium shadow-sm shadow-green-500/30 hover:shadow-green-500/50 transition-all duration-200 transform hover:shadow-md hover:-translate-y-0.5"
         >
           <a :href="whatsappLink" target="_blank">Teste Grátis</a>
         </button>
