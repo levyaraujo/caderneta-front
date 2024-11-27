@@ -34,7 +34,7 @@ const isRootRoute = computed(() => route.path === '/');
 <template>
   <nav
     :class="[
-      'fixed top-0 left-0 right-0 z-20 transition-all duration-300 navbar',
+      'fixed top-0 left-0 right-0 z-40 transition-all duration-300 navbar',
       isScrolled ? 'bg-slate-900/80 backdrop-blur-md shadow-lg' : 'bg-transparent'
     ]"
   >
