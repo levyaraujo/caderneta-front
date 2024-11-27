@@ -147,11 +147,6 @@ const lastUpdate = ref("24 de Novembro de 2024")
             </ul>
           </template>
         </div>
-
-        <!-- Footer -->
-        <footer class="mt-12 text-center text-gray-600 border-t pt-8">
-          <p>© {{ new Date().getFullYear() }} Caderneta. Todos os direitos reservados.</p>
-        </footer>
       </div>
     </div>
   </section>
