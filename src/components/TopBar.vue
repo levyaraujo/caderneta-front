@@ -42,7 +42,7 @@ const isRootRoute = computed(() => route.path === '/');
       <div :class="['flex items-center h-20', isRootRoute ? 'justify-between' : 'justify-center']">
         <!-- Logo -->
         <div class="flex-shrink-0">
-          <router-link to="#hero" class="flex items-center text-2xl font-bold">
+          <router-link to="/" class="flex items-center text-2xl font-bold">
             <img src="../../public/icon.svg" alt="Icon Description" class="mr-2">
             <span class="bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
               caderneta
