@@ -64,6 +64,7 @@ const isRootRoute = computed(() => route.path === '/');
           </div>
         </div>
         <button
+          v-if="isRootRoute"
           class="hidden md:block px-8 py-3 rounded-full bg-gradient-to-r from-green-500 to-green-600 text-white font-medium shadow-sm shadow-green-500/30 hover:shadow-green-500/50 transition-all duration-200 transform hover:shadow-md hover:-translate-y-0.5"
         >
           <a :href="whatsappLink" target="_blank">Teste Grátis</a>

@@ -8,7 +8,7 @@ const currentYear = computed(() => {
 </script>
 
 <template>
-  <footer class="bg-gray-900 text-gray-300 py-8 mt-16">
+  <footer class="bg-gray-900 text-gray-300 py-8 mt-6">
     <div class="max-w-6xl mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
@@ -58,12 +58,12 @@ const currentYear = computed(() => {
           <h3 class="text-white font-semibold">Contato</h3>
           <ul class="space-y-2">
             <li>
-              <a
-                href="mailto:cadernetapp@gmail.com"
+              <router-link
+                to="/contato"
                 class="hover:text-emerald-400 transition-colors duration-200"
               >
-                cadernetapp@gmail.com
-              </a>
+                Fale Conosco
+              </router-link>
             </li>
             <li>
               <a

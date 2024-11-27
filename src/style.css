@@ -17,5 +17,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #0F172A;
+  background-color: #0F1729;
+}
+
+#app {
+  height: 100vh;
+}
+
+p {
+ color: rgb(75 85 99);
 }

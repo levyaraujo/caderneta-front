@@ -97,9 +97,9 @@ const sections = ref<Section[]>([
     id: 10,
     title: "Contato",
     content: [
-      "E-mail: privacidade@caderneta.app",
-      "WhatsApp: (XX) XXXXX-XXXX",
-      "Formulário de contato: www.caderneta.app/contato"
+      "E-mail: cadernetapp@gmail.com",
+      "WhatsApp: (94) 98136-2600",
+      "Formulário de contato: www.caderneta.chat/contato"
     ],
     type: "list"
   }
