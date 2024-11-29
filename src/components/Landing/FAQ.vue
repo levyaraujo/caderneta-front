@@ -99,8 +99,8 @@ const toggleItem = (index: number) => {
       <div class="text-center mt-12">
         <p class="text-gray-400">
           Ainda tem dúvidas?
-          <a href="#" class="text-emerald-400 hover:text-emerald-300 ml-1 transition-colors duration-300">
-            Entre em contato com nosso suporte
+          <a href="mailto:contato@caderneta.chat" class="text-emerald-400 hover:text-emerald-300 ml-1 transition-colors duration-300">
+            Entre em contato
           </a>
         </p>
       </div>

@@ -55,22 +55,14 @@ const currentYear = computed(() => {
 
         <!-- Contact -->
         <div class="space-y-4">
-          <h3 class="text-white font-semibold">Contato</h3>
+          <h3 class="text-white font-semibold">Fale conosco</h3>
           <ul class="space-y-2">
             <li>
-              <router-link
-                to="/contato"
-                class="hover:text-emerald-400 transition-colors duration-200"
-              >
-                Fale Conosco
-              </router-link>
-            </li>
-            <li>
               <a
-                href="https://wa.me/5594981362600"
+                href="mailto:contato@caderneta.chat"
                 class="hover:text-emerald-400 transition-colors duration-200"
               >
-                WhatsApp
+                contato@caderneta.chat
               </a>
             </li>
           </ul>
