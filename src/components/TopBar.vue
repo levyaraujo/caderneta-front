@@ -51,9 +51,8 @@ const isRootRoute = computed(() => route.path === '/');
         </div>
 
         <div class="hidden md:flex items-center space-x-8">
-          <div class="flex space-x-8">
+          <div v-if="isRootRoute" class="flex space-x-8">
             <router-link
-              v-if="isRootRoute"
               v-for="item in navigation"
               :key="item.name"
               :to="item.href"

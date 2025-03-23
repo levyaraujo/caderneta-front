@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "ci:lint": "eslint src",
+    "ci:test": "echo 'No tests yet'",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "lucide-vue-next": "^0.460.0",
