@@ -5,7 +5,7 @@ phases:
     runtime-versions:
       nodejs: 22
     commands:
-      - curl -fsSL https://get.pnpm.io/install.sh | env PNPM_VERSION=10.6.5 sh -
+      - npm install -g pnpm@10.6.5
 
   pre_build:
     commands:
